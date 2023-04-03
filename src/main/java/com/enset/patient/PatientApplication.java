@@ -19,13 +19,17 @@ public class PatientApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		System.out.println("333333333");
 		//patientRepository.save(new Patient(null,"zouhair",new Date(),true,100));
 		//patientRepository.save(new Patient(null,"Ahmed",new Date(),true,100));
 		//patientRepository.save(new Patient(null,"Chaymaa",new Date(),false,200));
 		//System.out.println("********************************************");
 		//patientRepository.findAll().forEach(patient -> System.out.println(patient.toString()));
 		//System.out.println("********************************************");
-		//patientRepository.findById(1L).get().toString();
+		//Patient patient = patientRepository.findById(1L).orElse(null);
+		//System.out.println(patient.getNom());
+		//patient.setNom("Zouhair 11");
+		//patientRepository.save(patient);
 		//System.out.println("********************************************");
         //patientRepository.findByNomContains("h").forEach(patient -> System.out.println(patient.toString()));
 		//System.out.println("********************************************");
